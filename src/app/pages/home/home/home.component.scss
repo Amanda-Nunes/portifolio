@@ -1,0 +1,72 @@
+.home-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #1c1c1c;
+    h1 {
+        color: #fff;
+        font-family: 'Spicy Rice', cursive;
+        letter-spacing: 2px;
+        margin: 0 !important;
+        cursor: default;
+    }
+    span {
+        display: inline-block;
+        -webkit-transform: translatey(0px);
+        -ms-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    span:hover {
+        animation: float 2s ease-in-out infinite;
+        color: #750FF7;
+    }
+    h2 {
+        color: #8d8d8d;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    .text-area {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        z-index: 2;
+    }
+}
+
+::ng-deep {
+    .mat-stroked-button {
+        border-color: #750FF7 !important;
+    }
+}
+
+@-webkit-keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-5px);
+        transform: translatey(-5px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-5px);
+        transform: translatey(-5px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
