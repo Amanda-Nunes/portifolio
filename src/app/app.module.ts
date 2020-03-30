@@ -1,20 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home/home.component';
-import { SidemenuComponent } from './shared/components/side-menu/sidemenu/sidemenu.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SidemenuComponent } from './shared/components/side-menu/sidemenu.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialModule } from './angular-material.module';
 import { ParticlesModule } from 'angular-particle';
+import { AngularMaterialModule } from './angular-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { MobileHeaderComponent } from './shared/components/header/components/mobile-header/mobile-header.component';
+import { AboutComponent } from './pages/about/about.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SidemenuComponent
-  ],
+    SidemenuComponent,
+    HeaderComponent,
+    MobileHeaderComponent,
+    AboutComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

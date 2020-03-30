@@ -1,0 +1,40 @@
+::ng-deep {
+    mat-toolbar {
+        background-color: #171717 !important;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-grid {
+    width: 98%;
+    ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 7% 7% 10% 7% 7%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        li {
+            color: #fff;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: .5s linear;
+            padding-bottom: 19px;
+        }
+        a:hover {
+            color: #750FF7;
+        }
+        .activeLink {
+            color: #750FF7;
+        }
+        img {
+            width: 85px;
+            padding-top: 25%;
+        }
+    }
+}

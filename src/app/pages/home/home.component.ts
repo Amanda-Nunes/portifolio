@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
       'width': '100%',
       'height': '100%',
       'z-index': 1,
-      'top': 0,
-      'left': '5%',
+      'top': '9%',
+      'left': 0,
       'right': 0,
       'bottom': 0,
   };
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 this.myParams = {
       particles: {
           number: {
-              value: 50,
+              value: 70,
           },
           color: {
               value: '#750FF7'

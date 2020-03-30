@@ -18,6 +18,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 import { MatNativeDateModule } from '@angular/material';
@@ -39,7 +41,9 @@ const modules: any[] = [
   MatSidenavModule,
   MatNativeDateModule,
   MatIconModule,
-  MatButtonModule
+  MatButtonModule,
+  MatToolbarModule,
+  MatProgressBarModule
 ];
 
 @NgModule({
