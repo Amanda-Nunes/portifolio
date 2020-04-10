@@ -17,8 +17,10 @@ ul {
         align-items: center;
         justify-content: center;
         justify-items: center;
+        z-index: 9;
         li {
             color: #fff;
+            z-index: 9;
         }
         a {
             color: #fff;
@@ -35,6 +37,7 @@ ul {
         img {
             width: 85px;
             padding-top: 25%;
+            border-radius: 50%;
         }
     }
 }

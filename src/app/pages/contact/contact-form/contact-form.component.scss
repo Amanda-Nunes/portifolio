@@ -1,0 +1,76 @@
+::ng-deep {
+    .mat-form-field-label {
+        /*change color of label*/
+        color: #750FF7 !important;
+    }
+    .mat-form-field-underline {
+        /*change color of underline*/
+        background-color: #750FF7 !important;
+    }
+    .mat-form-field-ripple {
+        /*change color of underline when focused*/
+        background-color: #750FF7 !important;
+        ;
+    }
+}
+
+.header {
+    width: 94%;
+    padding: 3%;
+    h1 {
+        color: #750FF7;
+        font-family: 'Spicy Rice', cursive;
+        letter-spacing: 3px;
+        margin: 0 !important;
+        cursor: default;
+    }
+    p {
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    span {
+        color: #750FF7;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+.form {
+    padding: 3%;
+    width: 94%;
+    background-color: #333333;
+    border-radius: 24px;
+    .buttom-grid {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .first-grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 45% 2% 53%;
+        grid-template-columns: 45% 53%;
+        grid-gap: 2%;
+    }
+    .second-grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .third-grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    textarea {
+        resize: none;
+    }
+}

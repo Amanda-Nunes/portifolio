@@ -1,0 +1,52 @@
+<div class="header">
+    <div>
+        <h1>Contact me</h1>
+    </div>
+    <div>
+        <p>Thanks for taking the time to reach out. <br>How can I help you today<span>?</span></p>
+    </div>
+</div>
+<div class="form">
+
+    <form [formGroup]="formValidator">
+        <div class="first-grid">
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Username" formControlName="username" required>
+                <mat-error *ngIf="formValidator.get('username').errors">
+                    <mat-error class="error-message" *ngIf="formValidator.get('username').errors?.required"> Required Field</mat-error>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Email" formControlName="email" required>
+                <mat-error *ngIf="formValidator.get('email').errors">
+                    <mat-error class="error-message" *ngIf="formValidator.get('email').errors?.required"> Required Field </mat-error>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="second-grid">
+            <mat-form-field appearance="fill">
+                <mat-label>Subject</mat-label>
+                <input matInput type="text" placeholder="Subject" formControlName="subject" required>
+                <mat-error *ngIf="formValidator.get('subject').errors">
+                    <mat-error class="error-message" *ngIf="formValidator.get('subject').errors?.required"> Required Field </mat-error>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="third-grid">
+            <mat-form-field appearance="fill">
+                <mat-label>Message</mat-label>
+                <textarea matInput rows="10" formControlName="message"></textarea>
+                <mat-error *ngIf="formValidator.get('message').errors">
+                    <mat-error class="error-message" *ngIf="formValidator.get('message').errors?.required"> Required Field </mat-error>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="buttom-grid">
+            <button class="submit-btn" color="primary" mat-raised-button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</div>

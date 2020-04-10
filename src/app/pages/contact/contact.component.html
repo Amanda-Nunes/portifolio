@@ -1,0 +1,17 @@
+<div class="contact-bg">
+    <div class="page-grid">
+
+        <div class="contact">
+            <contact-form class="contact-form"></contact-form>
+        </div>
+        <div>
+            <agm-map class="map" [latitude]="lat" [longitude]="lng" [styles]="styles" [zoom]="11">
+                <agm-marker *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.lng" [opacity]="marker.alpha" [markerDraggable]="false">
+                </agm-marker>
+                <agm-rectangle [north]="max('lat')" [east]="max('lng')" [south]="min('lat')" [west]="min('lng')">
+                </agm-rectangle>
+            </agm-map>
+        </div>
+
+    </div>
+</div>

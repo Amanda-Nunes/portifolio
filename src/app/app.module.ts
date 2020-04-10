@@ -5,13 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SidemenuComponent } from './shared/components/side-menu/sidemenu.component';
-
-import { ParticlesModule } from 'angular-particle';
-import { AngularMaterialModule } from './angular-material.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { MobileHeaderComponent } from './shared/components/header/components/mobile-header/mobile-header.component';
 import { AboutComponent } from './pages/about/about.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ContactFormComponent } from './pages/contact/contact-form/contact-form.component';
+
+import { ParticlesModule } from 'angular-particle';
+import { AngularMaterialModule } from './pages/modules/angular-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,14 +26,25 @@ import { AboutComponent } from './pages/about/about.component';
     SidemenuComponent,
     HeaderComponent,
     MobileHeaderComponent,
-    AboutComponent  ],
+    AboutComponent,
+    SkillsComponent,
+    ContactComponent,
+    ContactFormComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    ParticlesModule
+    ParticlesModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBqsU950_ZJ9AaMIy0tl0SrSOw3YnurMh0'
+    })
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

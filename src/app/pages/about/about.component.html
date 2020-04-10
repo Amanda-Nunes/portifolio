@@ -1,7 +1,7 @@
 <div class="about-bg">
 
     <div class="page-grid">
-        <div>
+        <div class="first-grid">
             <h1>About me</h1>
             <p>
                 Professionally connected to the web development and information technology industry for a few years.
@@ -12,12 +12,18 @@
             <p>
                 Interested in the whole front-end spectrum, working with positive people and always trying to develop in the best way.
             </p>
-        </div>
-        <div></div>
-        <div>
-            <h2>Companies that I worked for</h2>
-            <div>
 
+            <img src="assets/imgs/screens.png" alt="Sreens image">
+        </div>
+        <div>
+            <h2 class="mb">Companies that I worked for</h2>
+            <div class="companies-grid">
+                <div *ngFor="let company of companyImgGroup" class="img_wrap">
+                    <img [src]="company.name" alt="Company Logo">
+                    <div class="img_description ">
+                        <p>{{company.description}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

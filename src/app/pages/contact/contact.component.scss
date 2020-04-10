@@ -1,0 +1,85 @@
+.contact-bg {
+    position: relative;
+    height: 94%;
+    width: 100%;
+    opacity: 1;
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+    .page-grid {
+        width: 100%;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 2;
+        .contact {
+            width: 94%;
+            height: 94%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+            .contact-form {
+                width: 90%;
+            }
+        }
+        h1 {
+            color: #750FF7;
+            font-family: 'Spicy Rice', cursive;
+            letter-spacing: 3px;
+            margin: 0 !important;
+            cursor: default;
+        }
+        p {
+            color: #fff;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .map {
+        height: 94vh
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
